@@ -137,7 +137,7 @@ Base URL: `http://localhost:5000`
 |-------:|----------------------------|:----:|-------------|
 | POST   | `/user/register`           |  -   | Register user & send verify OTP |
 | POST   | `/user/login`              |  -   | Login, receive JWT |
-| POST   | `/user/logout`             | JWT  | Logout (if implemented) |
+| POST   | `/user/logout`             | JWT  | Logout |
 
 ### Email Verification
 | Method | Path                       | Auth | Body |

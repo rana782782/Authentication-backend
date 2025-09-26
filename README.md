@@ -181,25 +181,7 @@ Import the collection into Postman:
 
 ---
 
-## 🐳 Docker (optional)
-```dockerfile
-# Dockerfile
-FROM node:20-alpine
-WORKDIR /app
-COPY server/package*.json ./
-RUN npm ci --only=production
-COPY server ./
-EXPOSE 5000
-CMD ["npm", "start"]
-```
 
-Build & run:
-```bash
-docker build -t mern-auth-backend .
-docker run -p 5000:5000 --env-file server/.env mern-auth-backend
-```
-
----
 
 ## 📁 Project Scripts
 
@@ -208,9 +190,6 @@ Check `server/package.json` for scripts like:
 - `dev` – (if present) nodemon dev mode
 
 ---
-
-## 📝 License
-This project is open-sourced under the **MIT License** (customize as needed).
 
 ---
 
